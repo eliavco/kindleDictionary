@@ -6,6 +6,7 @@
   "scripts": {
     "start": "cd website && live-server",
     "convertDB": "tsc convertDB && node convertDB",
+    "createTemplate": "cd createTemplateDict && tsc createTemplateDict && node createTemplateDict",
     "readDB": "tsc readDB && node readDB"
   },
   "repository": {
