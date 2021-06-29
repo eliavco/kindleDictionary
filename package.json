@@ -1,0 +1,23 @@
+{
+  "name": "kindledictionary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "convertDB": "node convertDB"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliavco/kindleDictionary.git"
+  },
+  "author": "Eliav Cohen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliavco/kindleDictionary/issues"
+  },
+  "homepage": "https://github.com/eliavco/kindleDictionary#readme",
+  "dependencies": {
+    "sqlite3": "^5.0.2"
+  }
+}
