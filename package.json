@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server",
+    "start": "cd website && live-server",
     "convertDB": "tsc convertDB && node convertDB",
     "readDB": "tsc readDB && node readDB"
   },
