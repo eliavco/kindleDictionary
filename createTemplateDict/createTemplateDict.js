@@ -8,10 +8,10 @@ var Definition = /** @class */ (function () {
     Definition.prototype.getTemplate = function () {
         var _this = this;
         var translations = Object.keys(this.definitions).map(function (def) {
-            var translationTemplate = "<li class=\"translation\">\n\t\t\t\t<div class=\"partofspeech\">" + (def ? def + ":" : '') + "</div>\n\t\t\t\t<p class=\"hebrew\">" + _this.definitions[def].join(', ') + "</p>\n\t\t\t</li>";
+            var translationTemplate = "<li class=\"translation\"><div class=\"partofspeech\">" + (def ? def + ":" : '') + "</div><p class=\"hebrew\">" + _this.definitions[def].join(', ') + "</p></li>";
             return translationTemplate;
         }).join('');
-        var template = "<idx:entry name=\"default\" scriptable=\"yes\" spell=\"yes\">\n\t\t\t<div class=\"definition\">\n\t\t\t\t<div class=\"origin\">\n\t\t\t\t\t<h3 class=\"lookup\"><idx:orth>" + this.lookup + "</idx:orth></h3>\n\t\t\t\t\t<p class=\"pronounciation\">/" + this.pronounciation + "/</p>\n\t\t\t\t</div>\n\t\t\t\t<ol>" + translations + "</ol>\n\t\t\t</div>\n\t\t\t</idx:entry><hr/>";
+        var template = "<idx:entry name=\"default\" scriptable=\"yes\" spell=\"yes\"><div class=\"definition\"><div class=\"origin\"><h3 class=\"lookup\"><idx:orth>" + this.lookup + "</idx:orth></h3><p class=\"pronounciation\">/" + this.pronounciation + "/</p></div><ol>" + translations + "</ol></div></idx:entry><hr/>";
         return template;
     };
     return Definition;
